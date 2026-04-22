@@ -31,8 +31,18 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Build with correct baseURL
+        run: |
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          echo "Built with baseURL: ${{ steps.pages.outputs.base_url }}/"
+
+      - name: Verify build output
+        run: |
+          ls -la public/
+          if [ ! -f "public/index.html" ]; then
+            echo "ERROR: index.html not found in public/"
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

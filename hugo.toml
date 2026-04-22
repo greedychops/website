@@ -7,3 +7,6 @@ theme = 'gc'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[build]
+  publishDir = "public"

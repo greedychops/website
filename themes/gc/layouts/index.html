@@ -16,12 +16,9 @@
 
 <footer class="contact-footer">
   <div class="footer-content">
-    <h2>Contact Us</h2>
+    <h2>Leave a message</h2>
     <form action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="683c0466-72d7-473c-be2d-87b211db7af3">
-      <div class="form-row">
-        <input type="text" name="name" placeholder="Name" required>
-      </div>
       <div class="form-row">
         <input type="email" name="email" placeholder="Email" required>
       </div>
@@ -32,6 +29,7 @@
         <button type="submit">Submit</button>
       </div>
     </form>
+    <p class="form-message hidden">Thank you for submitting a message. During times of high volume, we may not always be able to respond but we will do our best to read and process your message.</p>
   </div>
 </footer>
 {{ end }}

@@ -13,6 +13,17 @@ body {
   line-height: 1.6;
 }
 
+a {
+  color: #FF00FF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #E600E6;
+  text-decoration: underline;
+}
+
 .homepage {
   width: 100%;
   min-height: 100vh;
@@ -199,6 +210,27 @@ button[type="submit"]:hover {
   background: #E600E6;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(255, 0, 255, 0.3);
+}
+
+.form-message {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.form-message.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  display: none;
+}
+
+.form-message.visible {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
 }
 
 /* Responsive adjustments */

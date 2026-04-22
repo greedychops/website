@@ -4,4 +4,4 @@ title: "Greedy Chops"
 
 # Coming Soon!
 
-Find your [Greedy Chops Briefings](https://greedychopsbriefings.substack.com/){target="_blank"} on Substack
+Find your <a href="https://greedychopsbriefings.substack.com/" target="_blank">Greedy Chops Briefings</a> on Substack

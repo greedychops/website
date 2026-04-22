@@ -1,0 +1,9 @@
+baseURL = 'https://greedychops.com/'
+languageCode = 'en-us'
+title = 'Greedy Chops'
+theme = 'gc'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,37 @@
+{{ define "main" }}
+<main class="homepage">
+  <div class="video-container">
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="/videos/GC-Coming-Soon-Loop.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="content-section">
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+</main>
+
+<footer class="contact-footer">
+  <div class="footer-content">
+    <h2>Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="683c0466-72d7-473c-be2d-87b211db7af3">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Name" required>
+      </div>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-row">
+        <textarea name="message" placeholder="Message" required></textarea>
+      </div>
+      <div class="form-row">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</footer>
+{{ end }}

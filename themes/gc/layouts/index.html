@@ -11,25 +11,23 @@
     <div class="content">
       {{ .Content }}
     </div>
+    
+    <div class="contact-inline">
+      <h3>Leave a message</h3>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="683c0466-72d7-473c-be2d-87b211db7af3">
+        <div class="form-row-inline">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-row-inline">
+          <textarea name="message" placeholder="Message" required rows="2"></textarea>
+        </div>
+        <div class="form-row-inline">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <p class="form-message hidden">Thank you for submitting a message. During times of high volume, we may not always be able to respond but we will do our best to read and process your message.</p>
+    </div>
   </div>
 </main>
-
-<footer class="contact-footer">
-  <div class="footer-content">
-    <h2>Leave a message</h2>
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="683c0466-72d7-473c-be2d-87b211db7af3">
-      <div class="form-row">
-        <input type="email" name="email" placeholder="Email" required>
-      </div>
-      <div class="form-row">
-        <textarea name="message" placeholder="Message" required></textarea>
-      </div>
-      <div class="form-row">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-    <p class="form-message hidden">Thank you for submitting a message. During times of high volume, we may not always be able to respond but we will do our best to read and process your message.</p>
-  </div>
-</footer>
 {{ end }}

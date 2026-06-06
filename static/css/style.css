@@ -276,8 +276,9 @@ h3 {
   }
   
   .video-container {
-    width: 80vw;
-    max-width: 1200px;
+    padding-top: 5vh;
+    width: 65vw;
+    max-width: 900px;
   }
   
   h1 {

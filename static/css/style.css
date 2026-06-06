@@ -38,7 +38,7 @@ a:hover {
 .video-container {
   position: relative;
   width: 60vw;
-  max-width: 800px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,8 +276,8 @@ h3 {
   }
   
   .video-container {
-    width: 60vw;
-    max-width: 600px;
+    width: 80vw;
+    max-width: 1200px;
   }
   
   h1 {

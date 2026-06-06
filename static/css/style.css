@@ -37,13 +37,14 @@ a:hover {
 
 .video-container {
   position: relative;
-  width: 60vw;
-  max-width: 1200px;
+  width: 90vw;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
   overflow: hidden;
+  padding-top: 5vh;
 }
 
 .video-wrapper {
@@ -277,7 +278,7 @@ h3 {
   
   .video-container {
     padding-top: 5vh;
-    width: 65vw;
+    width: 90vw;
     max-width: 900px;
   }
   
@@ -333,8 +334,8 @@ h3 {
 
 @media (max-width: 480px) {
   .video-container {
-    width: 70vw;
-    max-width: 350px;
+    width: 90vw;
+    max-width: 375px;
   }
   
   h1 {
